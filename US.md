@@ -1,5 +1,7 @@
 # Accessibility Audit Studio — User Story Backlog
 
+Priority: P0 = essential MVP, P1 = important next, P2 = later enhancement.
+
 ## EPIC 1: Project and Website Management
 
 ### US-01: Create a project
