@@ -15,10 +15,11 @@ describe('App', () => {
     expect(app).toBeTruthy();
   });
 
-  it('should render title', async () => {
+  it('should show the dashboard and projects navigation', async () => {
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, Accessibility-Audit-Studio');
+    expect(compiled.querySelector('nav')?.textContent).toContain('Dashboard');
+    expect(compiled.querySelector('nav')?.textContent).toContain('Projects');
   });
 });

@@ -1,0 +1,39 @@
+:host {
+  display: block;
+  flex: 0 0 220px;
+}
+
+.sidebar {
+  position: sticky;
+  top: 0;
+  width: 220px;
+  height: 100vh;
+  padding: 24px 14px;
+  background: #111827;
+}
+
+nav {
+  display: grid;
+  gap: 6px;
+}
+
+nav a {
+  padding: 11px 12px;
+  border-radius: 6px;
+  color: #cbd5e1;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+  background: #293548;
+  color: #fff;
+}
+
+@media (max-width: 640px) {
+  :host { flex-basis: auto; }
+  .sidebar { position: static; width: 100%; height: auto; padding: 12px; }
+  nav { display: flex; }
+  nav a { flex: 1; }
+}

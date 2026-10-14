@@ -1,0 +1,25 @@
+:host {
+  display: block;
+  min-height: 100vh;
+}
+
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+}
+
+.page-area {
+  flex: 1;
+  min-width: 0;
+  padding: 48px clamp(24px, 5vw, 76px);
+}
+
+@media (max-width: 640px) {
+  .app-shell {
+    flex-direction: column;
+  }
+
+  .page-area {
+    padding: 32px 22px;
+  }
+}
